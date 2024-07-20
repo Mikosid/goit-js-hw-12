@@ -10,21 +10,20 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <form class="form-search js-search-form">
-        <input type="text" class="search-input" name="searchtext" />
-        <button type="submit" class="search-button">Search</button>
-      </form>
+  <form class="js-search search">
+    <input class="input-search" name="search" type="text" placeholder="Enter search term" />
+    <button class="btn-search" type="submit">Search</button>
+  </form>
+  <div class="container">
+    <ul class="gallery"></ul>
+    <div class="footer-gallery">
+      <button class="btn-load-more is-hidden" type="submit">Load more</button>
+      <p class="end-text is-hidden">
+        We're sorry, but you've reached the end of search results.
+      </p>
+      <div class="loader is-hidden"></div>
     </div>
-  </header>
-  <main class="main">
-    <div class="container">
-      <ul class="gallery"></ul>
-      <span class="js-loader"></span>
-      <button type="button" class="loadmore-button">Load more</button>
-    </div>
-  </main>
+  </div>
 
   <script type="module" src="./main.js"></script>
 </body>
