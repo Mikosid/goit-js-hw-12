@@ -1,0 +1,21 @@
+:root {
+  --fg-pb-green: 26, 255, 128;
+  --fg-pb-blue: 46, 207, 255;
+  --fg-pb-amber: 255, 182, 66;
+  --fg-pb-white: 192, 255, 255;
+  --fo-fg: var(--fg-pb-green);
+  --fo-bg: var(--fg-pb-green), 0.25;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #fff;
+  height: 100vh;
+}
+
+.container {
+  overflow: hidden;
+  max-width: 1440px;
+  padding: 10px;
+  margin: 0 auto;
+}
