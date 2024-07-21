@@ -32,7 +32,7 @@ const smoothScroll = () => {
     refs.galleryEl.firstElementChild.getBoundingClientRect().height;
 
   window.scrollBy({
-    top: cardHight * 2,
+    top: cardHight * 2.3,
     left: 0,
     behavior: 'smooth',
   });
@@ -91,6 +91,6 @@ refs.searchFormEl.addEventListener('submit', async event => {
 const onLoadMorePressed = async event => {
   params.currentPage += 1;
   const searchStr = refs.searchInputEl.value.trim();
-  renderPictures(searchStr);
+  await renderPictures(searchStr);
   smoothScroll();
 };
